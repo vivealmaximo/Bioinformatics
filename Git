@@ -5,6 +5,27 @@ Nice video tutorial ... https://www.youtube.com/watch?v=r63f51ce84A
 Connecting - cloning repositories ... https://help.github.com/articles/set-up-git/ 
 Working remotely ... https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes
 
+Basic Git Notions
+-Local Version Controls: saves file on one computer. 
+-Centralized Version Control: saves changes to a shared server.
+-Distributed Version Control:  dvc clients have complete backups of all the files on the personal computer. Changes are upload to a centralized server when every the connection is made. Each local has acess to the historic changes.  
 
+Files States
+-Git saves all these files as a comprressed directory which are modifiable in a workdir. One can notify that changes in the staging area chould be commited. 
+Modified Files: recently changes.
+Staged Files: marked to be saved.
+Committed Files: have been saved.
 
-Tester to see if connections was made
+Basic Flow:
+$ brew update
+$ brew doctor 
+  -- check for possible problems that may occur
+$ brew install git
+$ echo 'export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"' >> ~/.bash_profile
+   -- tell bash to look in the correct path for the homebrew managed version and restart terminal app
+   
+$ cd $HOME; vim .gitconfig
+  -- create configuration file in home directory for variables.
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+$ git config --global core.editor vim
