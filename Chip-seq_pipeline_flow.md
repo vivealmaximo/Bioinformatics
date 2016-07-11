@@ -53,6 +53,12 @@ General outline
       <li>
       PCR bottle neck coefficent 
       </li>
+      <li>
+      Pearson/Spearman correlation between aligned samples. 
+      </li>
+      <li>
+      Assess Chip samples signal strength.
+      </li>
     </ul>
   </li>
 
