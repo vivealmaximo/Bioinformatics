@@ -34,7 +34,10 @@ General outline
   Alignment to reference genome
     <ul>
         <li>
-        Create coverage to find optimal multi-mapping or alignment programs.
+        Create coverage to find optimal multi-mapping, duplication levels, or alignment programs.
+        </li>
+        <li>
+        Assess coverage of input libraries.
         </li>
     </ul>
   </li>
