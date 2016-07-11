@@ -10,6 +10,7 @@ General outline
   <li>
   Determination of of adequate sequence depth based on size of genome, size of binding site, frequency of binding site.
   </li>
+  
   <li>
   Quatily metrics of sequenced reads.
     <ul>
@@ -30,6 +31,7 @@ General outline
         </li>
     </ul>
   </li>
+  
   <li>
   Alignment to reference genome
     <ul>
@@ -41,6 +43,7 @@ General outline
         </li>
     </ul>
   </li>
+  
   <li>
   Quality metrics of read counts
     <ul>
@@ -60,6 +63,8 @@ General outline
       Assess Chip samples signal strength.
       </li>
     </ul>
+  </li>
+  
   <li>
   Peak-Finding
     <ul>
@@ -71,6 +76,4 @@ General outline
         </li>
     </ul>
   </li>
-  </li>
-
 </ol>
