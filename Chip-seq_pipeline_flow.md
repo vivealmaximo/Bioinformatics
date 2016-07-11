@@ -12,26 +12,31 @@ General outline
   </li>
   <li>
   Quatily metrics of sequenced reads.
-  <ul>
-      <li>
-      Total number of sequences.
-      </li>
-      <li>
-      Per base sequence quality.
-      </li>
-      <li>
-      GC-content.
-      </li>
-      <li>
-      Over-represented sequences.
-      </li>
-      <li>
-      K-mer content.
-      </li>
-  </ul>
+    <ul>
+        <li>
+        Total number of sequences.
+        </li>
+        <li>
+        Per base sequence quality.
+        </li>
+        <li>
+        GC-content.
+        </li>
+        <li>
+        Over-represented sequences.
+        </li>
+        <li>
+        K-mer content.
+        </li>
+    </ul>
   </li>
   <li>
   Alignment to reference genome
+    <ul>
+        <li>
+        Create coverage to find optimal multi-mapping or alignment programs.
+        </li>
+    </ul>
   </li>
   <li>
   Quality metrics of read counts
