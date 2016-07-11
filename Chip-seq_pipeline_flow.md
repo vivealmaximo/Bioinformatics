@@ -76,4 +76,16 @@ General outline
         </li>
     </ul>
   </li>
+  
+  <li>
+  Differential binding analysis
+    <ul>
+      <li>
+      Hypothesis Testing on multiple overlapping sets of peaks.
+      </li>
+      <li>
+      Total count or read density of peak regions.
+      </li>
+    </ul>
+  </li>
 </ol>
