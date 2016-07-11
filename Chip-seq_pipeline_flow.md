@@ -8,7 +8,7 @@ General outline
 
 <ol>
   <li>
-  Determination of of adequate sequence depth based on size of genome, size of binding site, frequency of binding site.
+  Determination of adequate sequence depth based on size of genome, size of binding site, frequency of binding site.
   </li>
   
   <li>
@@ -89,3 +89,7 @@ General outline
     </ul>
   </li>
 </ol>
+
+<h1 align="center">
+Determination of adequate sequence depth based on size of genome, size of binding site, frequency of binding site. 
+</h1>
