@@ -1,5 +1,5 @@
 <h1>
-Hello World
+Chip-seq pipe flow from raw fastq to motif-analysis and annotation. 
 
 
 
