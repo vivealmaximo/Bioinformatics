@@ -45,13 +45,13 @@ General outline
   Quality metrics of read counts
     <ul>
       <li>
-      Normalized Strand cross correlation
+      Normalized Strand Cross Correlation (NSC)
       </li>
       <li>
-      Relative Strand cross correlation
+      Relative Strand Cross Correlation (RSC)
       </li>
       <li>
-      PCR bottle neck coefficent 
+      PCR Bottle neck Coefficent (PBC) 
       </li>
       <li>
       Pearson/Spearman correlation between aligned samples. 
@@ -60,6 +60,17 @@ General outline
       Assess Chip samples signal strength.
       </li>
     </ul>
+  <li>
+  Peak-Finding
+    <ul>
+        <li>
+        Peak Finding using False Discovery Rate (FDR), p-values, q-values.
+        </li>
+        <li>
+        Irreproducuble Discovery Rate
+        </li>
+    </ul>
+  </li>
   </li>
 
 </ol>
