@@ -12,7 +12,7 @@ General outline
   </li>
   
   <li>
-  Quatily metrics of sequenced reads.
+  Quatily metrics for sequenced reads.
     <ul>
         <li>
         Total number of sequences.
@@ -45,7 +45,7 @@ General outline
   </li>
   
   <li>
-  Quality metrics of alignments
+  Quality metrics for alignments
     <ul>
       <li>
       Normalized Strand Cross Correlation (NSC)
