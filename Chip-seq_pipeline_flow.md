@@ -38,9 +38,6 @@ General outline
         <li>
         Create coverage to find optimal multi-mapping, duplication levels, or alignment programs.
         </li>
-        <li>
-        Assess coverage of input libraries.
-        </li>
     </ul>
   </li>
   
