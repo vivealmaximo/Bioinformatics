@@ -45,7 +45,7 @@ General outline
   </li>
   
   <li>
-  Quality metrics of read counts
+  Quality metrics of alignments
     <ul>
       <li>
       Normalized Strand Cross Correlation (NSC)
@@ -55,6 +55,9 @@ General outline
       </li>
       <li>
       PCR Bottle neck Coefficent (PBC) 
+      </li>
+      <li>
+      Nonredundant Fraction (NRF) 
       </li>
       <li>
       Pearson/Spearman correlation between aligned samples. 
