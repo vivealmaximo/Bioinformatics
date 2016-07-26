@@ -1,8 +1,0 @@
-Question: Is It Possible To Get Fragment Length, Read Length And Number Of Fragments From A Bam/Sam File
-Link: https://www.biostars.org/p/65262/
-
-To get the fragment length you need a paired end sequencing. Otherwise you will need to use some tools to process the bam file and estimate the fragment length (the peak caller MACS does that). The fragment length is given in the 9th column (see the Sam Format Specification).
-
-The read length can be obtained either by looking at the CIGAR field (column 6) or by counting the length of the sequence (column 10). The CIGAR field encodes the differences in the read sequence with respect to the reference genome, but usually most reads map perfectly to the reference genome and the CIGAR field can quickly inform you about the read length. A CIGAR will look like this for a read of 100 bp: 100M. In other words if you just see a number followed by M and nothing else, that number is the read length.
-
-The number of fragments is the number of lines in the BAM/SAM file for single end or half the number of lines for paired-end. Here one must be careful, thus is probably is easier to count the lines of the FASTQ file instead. The BAM/SAM format may have been filtered to remove all fragments that did not map, thus a count based on the BAM/SAM file will underestimate the total.

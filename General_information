@@ -1,0 +1,41 @@
+>Question: Is It Possible To Get Fragment Length, Read Length And Number Of Fragments From A Bam/Sam File?
+@Link: https://www.biostars.org/p/65262/
+
+To get the fragment length you need a paired end sequencing. Otherwise you will need to use some tools to process the bam file and estimate the fragment length (the peak caller MACS does that). The fragment length is given in the 9th column (see the Sam Format Specification).
+
+The read length can be obtained either by looking at the CIGAR field (column 6) or by counting the length of the sequence (column 10). The CIGAR field encodes the differences in the read sequence with respect to the reference genome, but usually most reads map perfectly to the reference genome and the CIGAR field can quickly inform you about the read length. A CIGAR will look like this for a read of 100 bp: 100M. In other words if you just see a number followed by M and nothing else, that number is the read length.
+
+The number of fragments is the number of lines in the BAM/SAM file for single end or half the number of lines for paired-end. Here one must be careful, thus is probably is easier to count the lines of the FASTQ file instead. The BAM/SAM format may have been filtered to remove all fragments that did not map, thus a count based on the BAM/SAM file will underestimate the total.
+
+
+>Question: subsampleing bam files?
+@Link: http://seqanswers.com/forums/archive/index.php/t-39610.html
+
+You can randomly subsample a BAM file with samtools (the view sub-command specifically). I believe this function was added in a later version of samtools but not sure exactly which release; I'm using version 0.1.19-44428cd.
+
+Usage: samtools view [options] <in.bam>|<in.sam> [region1 [...]]
+
+Options: -b output BAM
+-h print header for the SAM output
+-H print header only (no alignments)
+-S input is SAM
+-u uncompressed BAM output (force -b)
+-1 fast compression (force -b)
+-x output FLAG in HEX (samtools-C specific)
+-X output FLAG in string (samtools-C specific)
+-c print only the count of matching records
+-B collapse the backward CIGAR operation
+-@ INT number of BAM compression threads [0]
+-L FILE output alignments overlapping the input BED FILE [null]
+-t FILE list of reference names and lengths (force -S) [null]
+-T FILE reference sequence file (force -S) [null]
+-o FILE output file name [stdout]
+-R FILE list of read groups to be outputted [null]
+-f INT required flag, 0 for unset [0]
+-F INT filtering flag, 0 for unset [0]
+-q INT minimum mapping quality [0]
+-l STR only output reads in library STR [null]
+-r STR only output reads in read group STR [null]
+-s FLOAT fraction of templates to subsample; integer part as seed [-1]
+For example the following command will create file named subSample.bam with a random 1% sample taken from Sample.bam
+samtools view -b -o subSample.bam -s 0.01 Sample.bam
