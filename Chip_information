@@ -48,3 +48,12 @@ I would like to only get reads that aligned to the forward / reverse strand sepa
 samtools view -F 20 ... : forward strand
 samtools view -f 0x10 ... : reverse strand
 Is this correct? With -F 20 i also ignore the not aligned reads.
+
+>Question: ChIP-Seq duplicates metrics/qa
+@Link: https://www.biostars.org/p/112377/
+
+The number of duplicates to expect in part depends on the ChIP-ed factor and the library size.  As an extreme case, imagine you did ChIP-seq for a protein that binds only 10 places genome-wide, and you sequenced 10 million reads from that library. Just because of the underlying biology, in this case you'd get extremely high numbers of duplicates.
+
+It's frustrating that to interpret a lot of QC metrics you have to know the biology . . . which is the thing you're trying to learn about with the experiment in the first place!
+
+I've found ChIPQC (paper, BioConductor page) to be helpful.  The documentation is great, and the paper is informative.  It might help give some perspective on ChIP QC metrics like this one and you ideas for other metrics to try.
