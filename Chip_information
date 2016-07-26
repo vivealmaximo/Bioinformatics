@@ -15,6 +15,11 @@ You can randomly subsample a BAM file with samtools (the view sub-command specif
 
 Usage: samtools view [options] <in.bam>|<in.sam> [region1 [...]]
 
+>Question: SCC?
+@Link: https://groups.google.com/forum/#!topic/idr-discuss/DVkIESz7NiI
+
+
+
 Options: -b output BAM
 -h print header for the SAM output
 -H print header only (no alignments)
