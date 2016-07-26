@@ -39,3 +39,12 @@ Options: -b output BAM
 -s FLOAT fraction of templates to subsample; integer part as seed [-1]
 For example the following command will create file named subSample.bam with a random 1% sample taken from Sample.bam
 samtools view -b -o subSample.bam -s 0.01 Sample.bam
+
+>Question: Splitting alignment by strand
+@Link: https://www.biostars.org/p/14378/
+
+I would like to only get reads that aligned to the forward / reverse strand separately. I am using this for now:
+
+samtools view -F 20 ... : forward strand
+samtools view -f 0x10 ... : reverse strand
+Is this correct? With -F 20 i also ignore the not aligned reads.
