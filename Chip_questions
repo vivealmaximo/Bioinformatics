@@ -74,3 +74,6 @@ I've found ChIPQC (paper, BioConductor page) to be helpful.  The documentation i
 
 >Question: counting dups with samtools?
 @Link: https://www.biostars.org/p/129263/
+
+>Question: chip_exo macs2?
+@Link:https://github.com/taoliu/MACS/issues/15
