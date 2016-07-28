@@ -77,3 +77,6 @@ I've found ChIPQC (paper, BioConductor page) to be helpful.  The documentation i
 
 >Question: chip_exo macs2?
 @Link:https://github.com/taoliu/MACS/issues/15
+
+>Question: ideal SCC input?
+@Link: http://scilifelab.github.io/courses/ngsintro/1604/labs/chipseq
