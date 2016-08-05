@@ -80,3 +80,6 @@ I've found ChIPQC (paper, BioConductor page) to be helpful.  The documentation i
 
 >Question: ideal SCC input?
 @Link: http://scilifelab.github.io/courses/ngsintro/1604/labs/chipseq
+
+>Question: duplicates?
+@Link: http://chipster.csc.fi/manual/prinseq-duplicate-filter.html
