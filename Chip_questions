@@ -101,3 +101,7 @@ I've found ChIPQC (paper, BioConductor page) to be helpful.  The documentation i
 
 >Question: samtools flags?
 @Link: https://broadinstitute.github.io/picard/explain-flags.html
+
+>Question: phantom peak?
+@Link: https://www.encodeproject.org/data-standards/2012-quality-metrics/
+%Response: For short-read datasets (< 100 bp reads) and large genomes with a significant number of non-uniquely mappable positions (e.g., human and mouse), a cross-correlation phantom-peak is also observed at a strand-shift equal to the read length
