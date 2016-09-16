@@ -105,3 +105,9 @@ I've found ChIPQC (paper, BioConductor page) to be helpful.  The documentation i
 >Question: phantom peak?
 @Link: https://www.encodeproject.org/data-standards/2012-quality-metrics/
 %Response: For short-read datasets (< 100 bp reads) and large genomes with a significant number of non-uniquely mappable positions (e.g., human and mouse), a cross-correlation phantom-peak is also observed at a strand-shift equal to the read length
+
+>Question: phantom peak read length?
+@Link: https://www.biostars.org/p/56556/
+
+>Question: psuedo rep bams?
+@Link: https://groups.google.com/forum/#!topic/idr-discuss/y9Q7bv3mqak
